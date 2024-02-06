@@ -27,6 +27,7 @@ export default function HomePage() {
       >
         Software Engineer
       </Heading>
+
       <CustomIconButton
         Icon={<FaLinkedin />}
         href="https://www.linkedin.com/in/victor160997/"
