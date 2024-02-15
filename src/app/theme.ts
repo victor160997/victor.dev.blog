@@ -11,11 +11,37 @@ export const theme = extendTheme({
       body: {
         color: "white", // Define a cor do texto para branco
       },
+      h1: {
+        fontSize: "3rem",
+        fontWeight: "bold",
+      },
+      h2: {
+        fontSize: "2.5rem",
+        fontWeight: "bold",
+      },
+      h3: {
+        fontSize: "2rem",
+        fontWeight: "bold",
+      },
+      h4: {
+        fontSize: "1.5rem",
+        fontWeight: "bold",
+      },
+      h5: {
+        fontSize: "1rem",
+        fontWeight: "bold",
+      },
+      pre: {
+        border: "2px solid rgba(63, 63, 70, 0.4)",
+        padding: "1rem",
+        marginBlock: "1rem",
+      },
     },
   },
   colors: {
     primary: {
       purple: "rgb(195, 0, 255)",
+      purple03: "rgba(195, 0, 255, 0.3)",
       100: "#C5E4F3",
       200: "#A2D4EC",
       300: "#7AC1E4",
