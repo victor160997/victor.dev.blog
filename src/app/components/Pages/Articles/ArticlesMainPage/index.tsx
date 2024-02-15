@@ -12,26 +12,25 @@ interface PostMetadataProps {
   intro: string;
 }
 
-export const GetPosts = async (): Promise<PostMetadataProps[]> => {
-  const repositoryPath = path.join(process.cwd(), "posts");
-  const posts = fs.readdirSync(repositoryPath);
-  const postsPath: string[] = posts.map((post) =>
-    path.join(repositoryPath, post)
-  );
-  const metadatas = await Promise.all(
-    postsPath.map((postPath) => {
-      const markdownWithMetadata = fs.readFileSync(
-        path.join(postPath),
-        "utf-8"
-      );
-      const { data: metadata } = matter(markdownWithMetadata);
-      return metadata;
-    })
-  );
-  return metadatas as PostMetadataProps[];
-};
-
 export default async function ArticlesMainPage() {
+  const GetPosts = async (): Promise<PostMetadataProps[]> => {
+    const repositoryPath = path.join(process.cwd(), "posts");
+    const posts = fs.readdirSync(repositoryPath);
+    const postsPath: string[] = posts.map((post) =>
+      path.join(repositoryPath, post)
+    );
+    const metadatas = await Promise.all(
+      postsPath.map((postPath) => {
+        const markdownWithMetadata = fs.readFileSync(
+          path.join(postPath),
+          "utf-8"
+        );
+        const { data: metadata } = matter(markdownWithMetadata);
+        return metadata;
+      })
+    );
+    return metadatas as PostMetadataProps[];
+  };
   const posts = await GetPosts();
   return posts.map((post, i) => (
     <Link
