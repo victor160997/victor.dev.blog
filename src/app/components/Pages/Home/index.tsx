@@ -2,6 +2,7 @@ import { Box, Heading, IconButton, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import CustomIconButton from "../../shared/CustomIconButton";
+import ArticlesMainPage from "../Articles/ArticlesMainPage";
 
 export default function HomePage() {
   return (
@@ -52,6 +53,9 @@ export default function HomePage() {
         driven by a relentless pursuit of innovation and a commitment to
         leveraging cutting-edge tools to solve complex challenges.
       </Text>
+      <Box paddingBlock="1rem">
+        <ArticlesMainPage />
+      </Box>
     </Box>
   );
 }

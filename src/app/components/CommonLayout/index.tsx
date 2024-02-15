@@ -10,7 +10,7 @@ export function CommonLayout({
 }>) {
   return (
     <Box
-      w="100vw"
+      w="100%"
       minH="100vh"
       bgColor="#000000"
       display="flex"
