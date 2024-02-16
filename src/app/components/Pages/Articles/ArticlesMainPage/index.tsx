@@ -46,7 +46,7 @@ export default async function ArticlesMainPage() {
         _hover={{ backgroundColor: "gray.900" }} // Adiciona um efeito de sombra ao passar o mouse
       >
         <Text color="gray.600">{`| ${post.date}`}</Text>
-        <Heading as="h3" size="lg" my={2}>
+        <Heading as="h4" fontSize="1rem" my={2}>
           {post.title}
         </Heading>
         <Text mb={4} color="#969696">

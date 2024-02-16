@@ -17,9 +17,7 @@ export default function DesktopMenu() {
             <NavLink href="/about">About</NavLink>
             <NavLink href="/articles">Articles</NavLink>
             <NavLink href="/projects">Projects</NavLink>
-            <NavLink href="/speaking">Speaking</NavLink>
-            <NavLink href="/hire-me">Hire me</NavLink>
-            <NavLink href="/uses">Uses</NavLink>
+            <NavLink href="/contact-me">Contact me</NavLink>
           </Stack>
         </Flex>
       </Flex>

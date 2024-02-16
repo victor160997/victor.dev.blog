@@ -39,13 +39,7 @@ export default function MobileMenu() {
           <NavLink href="/projects">Projects</NavLink>
         </MenuItem>
         <MenuItem bg="rgba(41, 41, 41, 0.9)">
-          <NavLink href="/speaking">Speaking</NavLink>
-        </MenuItem>
-        <MenuItem bg="rgba(41, 41, 41, 0.9)">
-          <NavLink href="/hire-me">Hire me</NavLink>
-        </MenuItem>
-        <MenuItem bg="rgba(41, 41, 41, 0.9)">
-          <NavLink href="/uses">Uses</NavLink>
+          <NavLink href="/contact-me">Contact me</NavLink>
         </MenuItem>
       </MenuList>
     </Menu>

@@ -18,7 +18,6 @@ export default function RootLayout({
       <head>
         <title>Victor Rodrigues</title>
         <link rel="icon" href="/victor.jpg" />
-        {/* Outras tags do cabeçalho que você deseja adicionar */}
       </head>
       <body>
         <Providers>
