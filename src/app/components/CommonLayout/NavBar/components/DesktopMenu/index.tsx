@@ -14,7 +14,6 @@ export default function DesktopMenu() {
       <Flex height={"35px"} py={{ base: 2 }} px={{ base: 4 }} align={"center"}>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <Stack direction={"row"} spacing={4}>
-            <NavLink href="/about">About</NavLink>
             <NavLink href="/articles">Articles</NavLink>
             <NavLink href="/projects">Projects</NavLink>
             <NavLink href="/contact-me">Contact me</NavLink>

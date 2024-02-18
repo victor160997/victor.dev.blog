@@ -16,7 +16,7 @@ Aqui está um exemplo simples de um bloco de código em JavaScript::
 
 ```javascript
 function greet(name) {
-  console.log(`Hello, ${name}!`);
+  console.log(`Hello, ${name}!`, 2);
 }
 
 greet('Mundo');

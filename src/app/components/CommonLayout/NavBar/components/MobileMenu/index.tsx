@@ -30,9 +30,6 @@ export default function MobileMenu() {
         border="1px solid rgba(63, 63, 70, 0.5)"
       >
         <MenuItem bg="rgba(41, 41, 41, 0.9)">
-          <NavLink href="/about">About</NavLink>
-        </MenuItem>
-        <MenuItem bg="rgba(41, 41, 41, 0.9)">
           <NavLink href="/articles">Articles</NavLink>
         </MenuItem>
         <MenuItem bg="rgba(41, 41, 41, 0.9)">

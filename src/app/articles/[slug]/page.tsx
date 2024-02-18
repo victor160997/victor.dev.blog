@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import { Box } from "@chakra-ui/react";
 import { markdownToHtml } from "../../utils/markdownToHtml";
+import "./styles.css";
 
 export interface PostMetadata {
   title: string;
