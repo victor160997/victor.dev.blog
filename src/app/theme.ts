@@ -12,23 +12,23 @@ export const theme = extendTheme({
         color: "white", // Define a cor do texto para branco
       },
       h1: {
-        fontSize: "3rem",
-        fontWeight: "bold",
-      },
-      h2: {
         fontSize: "2.5rem",
         fontWeight: "bold",
       },
-      h3: {
+      h2: {
         fontSize: "2rem",
         fontWeight: "bold",
       },
-      h4: {
+      h3: {
         fontSize: "1.5rem",
         fontWeight: "bold",
       },
-      h5: {
+      h4: {
         fontSize: "1rem",
+        fontWeight: "bold",
+      },
+      h5: {
+        fontSize: "0.8rem",
         fontWeight: "bold",
       },
       pre: {
