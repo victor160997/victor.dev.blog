@@ -39,6 +39,7 @@ def factorial(n):
 print(factorial(5))  # Output: 120;
 ```
 
+
 ### 2) Binary Recursion
 
 Binary recursion occurs when a function makes two calls to itself at each step of the recursion. This type of recursion is commonly used in problems that can naturally split their solution into two similar or related sub-problems of roughly equal size. An excellent example of binary recursion is the calculation of Fibonacci numbers, where each number in the sequence is the sum of the two preceding ones, with the sequence starting from 0 and 1.
@@ -102,10 +103,10 @@ def list_files(directory):
             list_files(full_path)  # Recursive call for subdirectories
         else:
             print(full_path)
+```
 
 # Example usage:
 list_files('/path/to/directory')
-```
 
 This function starts at the specified directory and prints the path to every file contained within it and its subdirectories, demonstrating a practical use of recursion to handle a problem that involves a variable number of nested structures.
 

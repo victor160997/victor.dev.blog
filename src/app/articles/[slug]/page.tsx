@@ -5,6 +5,7 @@ import path from "path";
 import { Box } from "@chakra-ui/react";
 import { markdownToHtml } from "../../utils/markdownToHtml";
 import "./styles.css";
+import MarkdownRenderer from "@/app/components/shared/MarkdownRenderer";
 
 export interface PostMetadata {
   title: string;
@@ -32,21 +33,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
   return (
     <Box>
-      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      <MarkdownRenderer htmlContent={contentHtml} />
     </Box>
   );
 }
-
-// Exemplo de GetStaticPaths para gerar caminhos dinâmicos baseados em slugs de arquivos Markdown
-// export const getStaticPaths: GetStaticPaths = async () => {
-//   const postsDirectory = path.join(process.cwd(), "posts");
-//   const filenames = fs.readdirSync(postsDirectory);
-//   const paths = filenames.map((filename) => ({
-//     params: { slug: filename.replace(/\.md$/, "") },
-//   }));
-
-//   return {
-//     paths,
-//     fallback: false,
-//   };
-// };

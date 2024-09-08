@@ -3,7 +3,6 @@ import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 import CustomIconButton from "../../shared/CustomIconButton";
 import ArticlesMainPage from "../Articles/ArticlesMainPage";
 import SkillCartoon from "./components/SkillCartoon";
-import Link from "next/link";
 
 export default function HomePage() {
   return (
