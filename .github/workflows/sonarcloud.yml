@@ -39,3 +39,4 @@ jobs:
             -Dsonar.organization="Victor Mendonça" \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=$SONAR_TOKEN
+            -Dsonar.branch.name=main
