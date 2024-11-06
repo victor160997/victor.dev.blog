@@ -18,6 +18,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '20'
+
+      - name: Install Java 17
+        run: |
+          sudo apt update
+          sudo apt install openjdk-17-jdk -y
+          java -version
+  
       - name: Install dependencies
         run: npm install
 
